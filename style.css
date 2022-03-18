@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root {
+    --primary-color: #726DD8;
+    --navbar-bg: #36D6CA;
+    --button-bg: #6BBAA3;
+    --extra-color: #61FBD4;
+    --projects-bg: #009BD4;
+    --projects-title-bg: #00CEC9;
+    --projects-title-color: #EEE8A9;
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+}
+#mainNav {
+    color: white;
+    background-color: var(--navbar-bg);
+}
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.nav-link {
+    color: white !important;
+    font-size: 1.4rem;
+    transition: all .3s ease-in-out;
+}
+.nav-link:hover{
+    color: var(--primary-color) !important;
+    transform: translateY(-2px);
+}
+#about{
+    min-height: 100vh;
+}
+#about h1{
+    font-weight: 600;
+    color: white;
+}
+#about h2{
+    font-weight: 400;
+    color: var(--extra-color);
+}
+#projects {
+    min-height: 100vh;
+    background-color: var(--projects-bg);
+}
+#projects h2{
+    font-weight: 400;
+    border-bottom: 3px solid white;
+}
+.card-body {
+    background-color: var(--projects-title-bg);
+}
+.card-title {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+.card-title:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-4px);
+}
+#contact {
+    min-height: 20vh;
+    display: flex;
+}
+.social-group{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.social-media {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+.social-media:hover{
+    color: var(--extra-color) !important;
+    transform: translateY(-3px);
+}
+.fa-brands {
+    margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+    #about h1{
+        font-size: 2.5rem;
+    }
+    #about h2{
+        font-size: 2.5rem;
+    }
+    #projects h2{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 700px){
+    #contact {
+        min-height: 30vh;
+    }
+    .social-group {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .social-media {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 509px){
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+    #about h1{
+        font-size: 1.9rem;
+    }
+    #about h2{
+        font-size: 1.7rem;
+    }
+    #projects h2{
+        font-size: 1.55rem;
+    }
+}
+@media (max-width: 393px){
+    .nav-link {
+        font-size: 1.2rem;
+    }
+    #about h1{
+        font-size: 1.5rem;
+    }
+    #about h2{
+        font-size: 1.4rem;
+    }
+    #projects h2{
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 850px){
+    .social-media{
+        font-size: 1.7em;
+    }
+}
+@media (min-width: 950px){
+    .social-media {
+        font-size: 1.8em;
+    }
+}
+@media (min-width: 1200px){
+    .social-media{
+        font-size: 2.2em;
+    }
+}
