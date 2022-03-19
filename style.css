@@ -99,7 +99,7 @@ body{
 }
 @media (max-width: 700px){
     #contact {
-        min-height: 30vh;
+        min-height: 24vh;
     }
     .social-group {
         flex-direction: column;
